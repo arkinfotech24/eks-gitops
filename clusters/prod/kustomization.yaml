@@ -1,14 +1,7 @@
-apiVersion: kustomize.toolkit.fluxcd.io/v1
+apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-metadata:
-  name: prod-cluster
-  namespace: flux-system
-spec:
-  interval: 5m
-  path: ./apps/demo-app/overlays/prod
-  sourceRef:
-    kind: GitRepository
-    name: eks-gitops
-  prune: true
-  targetNamespace: prod
+resources:
+  - flux-system
+  - git-source.yaml
+  - ../../apps/demo-app/overlays/prod
 
