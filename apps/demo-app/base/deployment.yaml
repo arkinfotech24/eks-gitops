@@ -2,8 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demo-app
+  namespace: prod
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: demo-app
@@ -14,7 +15,7 @@ spec:
     spec:
       containers:
         - name: demo-app
-          image: nginx:1.25
+          image: nginx:latest
           ports:
             - containerPort: 80
 
