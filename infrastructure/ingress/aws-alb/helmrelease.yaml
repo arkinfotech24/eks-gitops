@@ -1,0 +1,23 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: aws-load-balancer-controller
+  namespace: kube-system
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: aws-load-balancer-controller
+      version: "1.8.1"
+      sourceRef:
+        kind: HelmRepository
+        name: eks
+        namespace: flux-system
+  values:
+    clusterName: allen-eks-cluster
+    region: us-east-1
+    vpcId: ""  # optional, can be omitted if autodetected
+    serviceAccount:
+      create: false
+      name: aws-load-balancer-controller
+
