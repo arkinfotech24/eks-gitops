@@ -251,11 +251,6 @@ You can wrap it like this:
 > 
 > The result is a fully GitOps‑driven EKS environment: no manual changes in prod, full auditability, easy rollbacks, and a clear separation between application code, infrastructure, and cluster configuration.”
 
-If you want, I can next:
-
-- Draft a **2–3 minute “walk me through this project”** answer  
-- Or add the **GitHub Actions + ECR + Flux Image Automation** layer as a second phase of the story.
-
 Resource Links:
 
 https://knowledge.businesscompassllc.com/build-configure-deploy-full-eks-cluster-creation-tutorial-with-eksctl/?utm_source=copilot.com
