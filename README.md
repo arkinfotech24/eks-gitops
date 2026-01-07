@@ -257,6 +257,7 @@ If you want, I can next:
 - Or add the **GitHub Actions + ECR + Flux Image Automation** layer as a second phase of the story.
 
 Resource Links:
+
 https://knowledge.businesscompassllc.com/build-configure-deploy-full-eks-cluster-creation-tutorial-with-eksctl/?utm_source=copilot.com
 
 https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html?utm_source=copilot.com
