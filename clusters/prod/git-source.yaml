@@ -1,11 +1,13 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: eks-gitops
+  name: flux-system
   namespace: flux-system
 spec:
   interval: 1m
-  url: https://github.com/arkinfotech24/eks-gitops
+  url: ssh://git@github.com/arkinfotech24/eks-gitops
   ref:
     branch: master
+  secretRef:
+    name: flux-system
 
