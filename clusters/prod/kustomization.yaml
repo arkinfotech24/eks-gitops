@@ -4,5 +4,5 @@ resources:
   - namespace.yaml
   - git-source.yaml
   - flux-system/gotk-components.yaml
-  - ./apps/demo-app/overlays/prod
+  - ../../apps/demo-app/overlays/prod
 
