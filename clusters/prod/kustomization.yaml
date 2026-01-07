@@ -4,5 +4,6 @@ resources:
   - namespace.yaml
   - git-source.yaml
   - flux-system/gotk-components.yaml
+  - ../../infrastructure/ingress/aws-alb
   - ../../apps/demo-app/overlays/prod
 
